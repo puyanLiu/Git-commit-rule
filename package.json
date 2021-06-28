@@ -1,0 +1,26 @@
+{
+  "name": "application-name",
+  "version": "1.1.0",
+  "scripts": {
+    "changelog": "standard-version"
+  },
+  "author": "",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^9.1.2",
+    "commitizen": "^4.2.1",
+    "commitlint": "^9.1.2",
+    "cz-customizable": "^6.3.0",
+    "husky": "^4.3.0",
+    "standard-version": "^9.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
